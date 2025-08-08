@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enhanced Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      header,
+      main,
+      footer {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 15px 0;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      form {
+        display: grid;
+        gap: 15px;
+      }
+      input,
+      select,
+      textarea,
+      button {
+        padding: 10px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Enhanced HTML5 Form</h1>
+      <p>
+        Welcome to enhanced forms where i&apos;ll put in to action the work
+        learnt.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Features of this page</h2>
+        <ul>
+          <li>Semantic HTML5 structure</li>
+          <li>Media integration</li>
+          <li>Tables and lists</li>
+          <li>Accessible and validated form</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sample Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Price</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Design</td>
+              <td>$500</td>
+              <td>2 Weeks</td>
+            </tr>
+            <tr>
+              <td>SEO Optimization</td>
+              <td>$300</td>
+              <td>1 Week</td>
+            </tr>
+            <tr>
+              <td>Consultation</td>
+              <td>$100</td>
+              <td>2 Hours</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Sample audio</h2>
+        <audio controls>
+          <source src="media.mp3" alt="audio/mp3" />
+          Your browser does not support the audio element
+        </audio>
+      </section>
+
+      <section>
+        <h2>Contact & Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+          <!-- Name -->
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <!-- Email -->
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+
+          <!-- Password -->
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter a secure password"
+            required
+            minlength="6"
+          />
+
+          <!-- Phone -->
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="e.g., +254712345678"
+            pattern="^\+?\d{10,15}$"
+            required
+          />
+
+          <!-- Date of Birth -->
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <!-- Gender -->
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Select --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+
+          <!-- Skills -->
+          <label>Skills:</label>
+          <input type="checkbox" name="skills" value="html" /> HTML
+          <input type="checkbox" name="skills" value="css" /> CSS
+          <input type="checkbox" name="skills" value="js" /> JavaScript
+
+          <!-- File Upload -->
+          <label for="resume">Upload Resume (PDF):</label>
+          <input type="file" id="resume" name="resume" accept=".pdf" />
+
+          <!-- Readonly Field -->
+          <label for="member-id">Member ID (readonly):</label>
+          <input
+            type="text"
+            id="member-id"
+            name="member-id"
+            value="USR12345"
+            readonly
+          />
+
+          <!-- Message -->
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit">Submit Form</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Enhanced Form. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
